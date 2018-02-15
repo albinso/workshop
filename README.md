@@ -1,22 +1,25 @@
-# Optional
-pip install virtualenv  
-pip install virtualenvwrapper  
-pip install virtualenvwrapper-win (if on windows)  
+### Optional
+```
+pip install virtualenv
+pip install virtualenvwrapper
+```
+or  
+`pip install virtualenvwrapper-win` (if on windows)  
   
-mkvirtualenv django-demo  
+`mkvirtualenv django-demo`  
+  
+### Install django
+`pip install -e django/`  
+  
+### Create new project
+`django-admin startproject workshop`  
+  
+workshop/workshop contains project wide settings  
   
-Install django in virtualenvironment:  
-pip install -e django/  
+Create an app to contain our code  
+`python manage.py startapp language_rater`  
   
-Setup project:  
-django-admin startproject workshop  
-  
-Settings in workshop/workshop  
-  
-Create an app to contain our code  
-python manage.py startapp language_rater  
-  
-Run:  
-python manage.py runserver  
-  
+Run:  
+`python manage.py runserver  `
+  
   
