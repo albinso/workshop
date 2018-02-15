@@ -20,4 +20,5 @@ from django.urls import path
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('rate/', language_rater.views.index),
+    path('rate/upvote/<lang_id>/', language_rater.views.upvote),
 ]
