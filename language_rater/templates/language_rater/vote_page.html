@@ -1,9 +1,9 @@
 <b>Vote for your fav lang plz</b>
 <div id="langs">
-{% for lang in langs %}
+{% for lang in langs %} <!-- Loop over input list named langs. Just like you would in python. -->
     <div class="single_lang">
-        {{ lang.name }}
+        {{ lang.name }} <!-- {{ foo }} inserts the value of foo in the html code. This lets us insert values dynamically. -->
         {{ lang.num_votes }}
-        <a href="upvote/{{ lang.id }}">Vote</a>
+        <a href="upvote/{{ lang.id }}">Vote</a> <!-- {{ }} can also be used inside of tags and attributes. -->
     </div>
 {% endfor %}

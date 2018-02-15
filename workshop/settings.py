@@ -25,7 +25,7 @@ SECRET_KEY = 'crvxl#4$jq)ih4h#l6mf-il=kus25a=0u4y93))z!&3p7262z@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [] # Important if to be accessed publicly
 
 
 # Application definition
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'language_rater'
+    'language_rater' # Important to include the app
 ]
 
 MIDDLEWARE = [
@@ -55,7 +55,7 @@ ROOT_URLCONF = 'workshop.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['language_rater/templates'],
+        'DIRS': ['language_rater/templates'], # Important to find templates
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

@@ -1,6 +1,6 @@
 from django.db import models
 
-# Create your models here.
+# Represents a language and keeps track of the votes
 class Language(models.Model):
 
 	num_votes = models.IntegerField()
