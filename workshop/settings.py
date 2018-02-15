@@ -54,7 +54,7 @@ ROOT_URLCONF = 'workshop.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['language_rater/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

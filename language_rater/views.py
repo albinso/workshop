@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.template.loader import get_template
 
 # Create your views here.
 def index(request):
-	return HttpResponse("Heyo world!")
+	return render(request, "language_rater/vote_page.html")
