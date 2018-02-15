@@ -1,1 +1,8 @@
 <b>Vote for your fav lang plz</b>
+<div id="langs">
+{% for lang in langs %}
+    <div class="single_lang">
+        {{ lang.name }}
+        {{ lang.num_votes }}
+    </div>
+{% endfor %}
